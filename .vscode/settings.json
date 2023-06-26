@@ -1,4 +1,9 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "cSpell.words": ["nextlevel", "withu"],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
