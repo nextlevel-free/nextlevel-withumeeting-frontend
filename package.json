@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "commitmsg": "commitlint -E HUSKY_GIT_PARAMS"
+    "commitmsg": "./commitmsg.js"
   },
   "dependencies": {
     "@types/node": "20.3.1",

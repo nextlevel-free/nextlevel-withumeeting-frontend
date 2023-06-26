@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "commit-msg": "bash .husky/commit-msg"
+    "pre-commit": "npm run commitmsg"
   }
 }
