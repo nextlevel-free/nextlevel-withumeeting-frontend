@@ -5,4 +5,7 @@ module.exports = {
   tabWidth: 2,
   trailingComma: 'all',
   printWidth: 120,
+  parser: 'babel',
+  bracketSpacing: true,
+  arrowParens: 'always',
 };
