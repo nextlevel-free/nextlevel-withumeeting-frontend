@@ -11,7 +11,7 @@ module.exports = {
     sourceType: 'module',
     createDefaultProgram: true,
   },
-  plugins: ['react', '@typescript-eslint', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'prettier', 'import'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': [
@@ -46,5 +46,22 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'import/order': [
+      'error',
+      {
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+      },
+    ],
+    'import/no-unresolved': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+      node: {
+        paths: ['src'],
+      },
+    },
   },
 };
