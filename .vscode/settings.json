@@ -3,7 +3,11 @@
     "source.fixAll.eslint": true
   },
   "editor.formatOnSave": true,
-  "cSpell.words": ["nextlevel", "withu"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "cSpell.words": [
+    "nextlevel",
+    "withu"
+  ],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
