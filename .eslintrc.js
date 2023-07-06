@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb'],
+  extends: ['plugin:react/recommended', 'airbnb', 'eslint:recommended', 'next/core-web-vitals'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     project: ['./tsconfig.json'],
@@ -53,6 +53,7 @@ module.exports = {
       },
     ],
     'import/no-unresolved': 'off',
+    'linebreak-style': 0,
   },
   settings: {
     'import/resolver': {
