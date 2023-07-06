@@ -3,6 +3,8 @@
 import { atom, useAtom } from 'jotai'; // jotai에서 제공하는 기능?
 
 const textAtom = atom('hello');
+
+// readonly atom get함수를 통해 textAtom의 value를 가져온다.
 const uppercaseAtom = atom((get) => get(textAtom).toUpperCase());
 
 function Input() {
@@ -13,7 +15,8 @@ function Input() {
 }
 
 function Uppercase() {
-  const [uppercase] = useAtom(uppercaseAtom); // useAtom(atom);
+  // useAtom(atom);
+  const [uppercase] = useAtom(uppercaseAtom);
   return <div>{uppercase}</div>;
 }
 
