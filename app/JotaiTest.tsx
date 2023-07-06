@@ -1,7 +1,7 @@
 'use client';
 
 import { atom, useAtom } from 'jotai';
-import { textAtom } from '../store/atoms';
+import { textAtom } from '../store/atoms/text';
 
 // readonly atom get함수를 통해 textAtom의 value를 가져온다.
 const updateCaseAtom = atom((get) => get(textAtom).toUpperCase());
